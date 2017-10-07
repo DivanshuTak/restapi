@@ -20,7 +20,11 @@ from library_module import views
 router = routers.DefaultRouter()
 router.register(r'users', views.UserViewSet)
 router.register(r'groups', views.GroupViewSet)
-
+router.register(r'genre', views.GenreViewSet)
+router.register(r'language', views.LanguageViewSet)
+router.register(r'book', views.BookViewSet)
+router.register(r'book-instance', views.BookInstanceViewSet)
+router.register(r'author', views.AuthorViewSet)
 
 
 urlpatterns = [
